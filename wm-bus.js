@@ -39,9 +39,10 @@ function StringToHex(str){
 	var arr1 = [];
 	for (var n = 0, l = str.length; n < l; n ++){
 		var hex = Number(str.charCodeAt(n)).toString(16);
+		hex = (hex.length == 1) ? hex = '0' + hex : hex;
 		arr1.push(hex);
 	}
-	return arr1.join('').toUpperCase();
+	return arr1.join(' ').toUpperCase();
 }
 
 function onMessage (obj) {
