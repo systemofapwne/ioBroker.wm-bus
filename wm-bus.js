@@ -42,7 +42,7 @@ function StringToHex(str){
 		hex = (hex.length == 1) ? hex = '0' + hex : hex;
 		arr1.push(hex);
 	}
-	return arr1.join(' ').toUpperCase();
+	return arr1.join('').toUpperCase();
 }
 
 function onMessage (obj) {
